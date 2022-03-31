@@ -1,5 +1,4 @@
-/* стили для index.html */
-:root {
+стили для index.html :root {
   /* main fonts */
   --main-font: 'Roboto', sans-serif;
   --secondary-font: Raleway, sans-serif;
@@ -190,8 +189,8 @@ p {
   min-width: 200px;
   max-width: 300px;
   font-family: inherit;
-  color: var(--secondary-text-color);
-  background-color: var(--secondary-background-color);
+  color: white;
+  background-color: rgba(33, 150, 243, 1);
   font-weight: 700;
   line-height: 1.88;
   border-radius: 4px;
@@ -214,13 +213,12 @@ p {
   height: 100%;
   bottom: 0;
   left: 0;
-  background-color: #fff;
-  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .backdrop.is-hidden {
-  opacity: 0.5;
-
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -230,9 +228,8 @@ p {
   transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
-  background-color: red;
+  background-color: white;
   border-radius: 4px;
-  /* background-color: rgba(151, 27, 27, o.5); */
 }
 .modal-button {
   position: absolute;
@@ -241,9 +238,15 @@ p {
   top: 8px;
   right: 8px;
   border-radius: 50%;
-  background-color: black;
+  background-color: white;
+  display: flex;
+  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+}
+.modal-button:hover,
+.modal-button:focus {
+  background-color: #fff;
 }
 
 /* main section 1*/
